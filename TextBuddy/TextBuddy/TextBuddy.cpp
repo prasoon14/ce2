@@ -56,6 +56,15 @@ void clear() {
 	return;
 }
 
+void sortFile(vector<string>& tempStorage) {
+	sort(tempStorage.begin(), tempStorage.end());
+	return;
+}
+
+bool isFileSorted(vector<string>& tempStorage) {
+	return is_sorted(tempStorage.begin(), tempStorage.end());
+}
+
 void collectData(char* argv[]) {
 
 	string userCommand = "";
@@ -89,6 +98,12 @@ void collectData(char* argv[]) {
 			NumberOfData = 0;
 			updateFile(argv);
 			cout << "all content deleted from " << argv[1] << endl;
+		}
+		else if (userCommand == "sort") {
+			sortFile(tempStorage);
+			if (isFileSorted(tempStorage)) {
+				cout << "lines have been sorted." << endl;
+			}
 		}
 		else {
 			cout << "INVALID INPUT.\n";

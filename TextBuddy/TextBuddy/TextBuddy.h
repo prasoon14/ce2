@@ -15,6 +15,7 @@ void del(int);
 void display(char*);
 void clear();
 void collectData(char*);
-
+void sortFile(vector<string>&);
+bool isFileSorted(vector<string>&);
 
 #endif
