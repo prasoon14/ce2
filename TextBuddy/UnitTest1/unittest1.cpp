@@ -9,9 +9,11 @@ namespace UnitTest1
 	{
 	public:
 		
-		TEST_METHOD(TestMethod1)
+		TEST_METHOD(sortTest)
 		{
-			
+			vector<string> tempStorage = { "apple", "mango", "carrot", "banana" };
+			sortFile(tempStorage);
+			Assert::IsTrue(areFileSorted());
 		}
 
 	};

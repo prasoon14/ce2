@@ -2,13 +2,9 @@
 // Matric No.: A0116683B
 //Assumptions: The user does not input more than 1 line in the program when the program asks for command.
 
-#include <iostream>
-#include <string>
-#include <vector>
-#include <fstream>
+#include "TextBuddy.h"
 
 using namespace std;
-
 
 const int REQ_NUM_OF_ARG = 2;
 vector<string> tempStorage;
@@ -30,6 +26,7 @@ void updateFile(char* argv[]) {
 
 	return;
 }
+
 
 void add(string userData) {
 	tempStorage.push_back(userData);
