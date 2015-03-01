@@ -1,0 +1,15 @@
+add little brown fox
+display
+add jumped over the moon
+display
+add for an adventure
+display
+delete 3
+display
+clear
+display
+add In the game of thrones you win or you die
+display
+add rains of castamere
+display
+exit

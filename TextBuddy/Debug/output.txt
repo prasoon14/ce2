@@ -1,0 +1,34 @@
+Welcome to TextBuddy. mytestfile.txt is ready for use.
+command: added to mytestfile.txt: '' little brown fox''
+command: 
+1.  little brown fox
+command: 
+added to mytestfile.txt: '' jumped over the moon''
+command: 
+1.  little brown fox
+2.  jumped over the moon
+command: 
+added to mytestfile.txt: '' for an adventure''
+command: 
+1.  little brown fox
+2.  jumped over the moon
+3.  for an adventure
+command: 
+deleted from mytestfile.txt: '' for an adventure''
+command: 
+1.  little brown fox
+2.  jumped over the moon
+command: 
+all content deleted from mytestfile.txt
+command: 
+mytestfile.txt is empty.
+command: 
+added to mytestfile.txt: '' In the game of thrones you win or you die''
+command: 
+1.  In the game of thrones you win or you die
+command: 
+added to mytestfile.txt: '' rains of castamere''
+command: 
+1.  In the game of thrones you win or you die
+2.  rains of castamere
+command: 
