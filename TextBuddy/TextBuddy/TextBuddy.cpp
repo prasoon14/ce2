@@ -65,6 +65,21 @@ bool isFileSorted(vector<string>& tempStorage) {
 	return is_sorted(tempStorage.begin(), tempStorage.end());
 }
 
+string searchWord(vector<string>& tempStorage, string &stringToSearch) {
+	int i = 0;
+	ostringstream output;
+
+	for (vector<string>::iterator iter = tempStorage.begin(); iter < tempStorage.end(); iter++) {
+		bool exists = tempStorage[iter].find(stringToSearch) != tempStorage.end()-1;
+		if (exists) {
+			i++;
+			output << i << ". " << tempStorage[iter] << endl;
+		}
+	}
+	
+	return output.str();
+}
+
 void collectData(char* argv[]) {
 
 	string userCommand = "";
@@ -104,6 +119,12 @@ void collectData(char* argv[]) {
 			if (isFileSorted(tempStorage)) {
 				cout << "lines have been sorted." << endl;
 			}
+		}
+		else if (userCommand == "search") {
+			string stringToSearch;
+			getline(cin,stringToSearch);
+			string outputMessage = searchWord(tempStorage, stringToSearch);
+			cout << outputMessage << endl;
 		}
 		else {
 			cout << "INVALID INPUT.\n";

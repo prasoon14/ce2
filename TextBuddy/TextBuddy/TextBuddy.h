@@ -6,6 +6,7 @@
 #include <vector>
 #include <fstream>
 #include <algorithm>
+#include <sstream>
 
 using namespace std;
 
@@ -17,5 +18,6 @@ void clear();
 void collectData(char*);
 void sortFile(vector<string>&);
 bool isFileSorted(vector<string>&);
+string searchWord(vector<string>&, string&);
 
 #endif
